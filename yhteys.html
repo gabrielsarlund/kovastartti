@@ -20,14 +20,18 @@
     </header>
     <main>
         <h1>Ota yhteyttä</h1>
+        <p>Onko sinulla kysyttävää treenaamisesta tai haluatko antaa palautetta? Täytä alla oleva lomake ja Gabriel vastaa sinulle pian.</p>
         <form>
-            <label for="nimi">Nimi:</label>
-            <input type="text" id="nimi" required>
-            <label for="email">Sähköposti:</label>
-            <input type="email" id="email" required>
-            <label for="viesti">Viesti:</label>
-            <textarea id="viesti" rows="5"></textarea>
-            <button type="submit">Lähetä</button>
+            <label for="nimi">Koko nimi:</label>
+            <input type="text" id="nimi" placeholder="Esim. Matti Meikäläinen" required>
+            
+            <label for="email">Sähköpostiosoite:</label>
+            <input type="email" id="email" placeholder="matti@esimerkki.fi" required>
+            
+            <label for="viesti">Viestisi meille:</label>
+            <textarea id="viesti" rows="6" placeholder="Kirjoita viestisi tähän..."></textarea>
+            
+            <button type="submit">Lähetä viesti</button>
         </form>
     </main>
     <footer><p>&copy; 2026 Gabriel Sarlund | KovaStartti!</p></footer>
