@@ -1,0 +1,113 @@
+/* Tyylitiedosto KovaStartti-sivustolle */
+
+:root {
+    --primary: #0A192F;
+    --accent: #00C896;
+    --text: #222222;
+    --bg: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    background-color: var(--bg);
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+}
+
+/* Navigaatio */
+header {
+    background: var(--primary);
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav-links a.active {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+/* Hero osio */
+.hero {
+    background: #f4f4f4;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.cta {
+    background: var(--accent);
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+/* Kortit ja Grid */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+footer {
+    background: var(--primary);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+/* Responsiivisuus - Desktop */
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
