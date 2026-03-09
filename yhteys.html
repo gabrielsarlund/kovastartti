@@ -3,23 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ota yhteyttä - KovaStartti!</title>
+    <meta name="description" content="Ota yhteyttä KovaStartti!-tiimiin.">
+    <title>Yhteys - KovaStartti!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><nav class="navbar"><a href="index.html" class="logo">KovaStartti!</a><ul class="nav-links"><li><a href="index.html">Etusivu</a></li><li><a href="treeni.html">Treeni</a></li><li><a href="ravinto.html">Ravinto</a></li><li><a href="yhteys.html" class="active">Yhteys</a></li></ul></nav></header>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">KovaStartti!</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="treeni.html">Treeni</a></li>
+                <li><a href="ravinto.html">Ravinto</a></li>
+                <li><a href="yhteys.html" class="active">Yhteys</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <h1>Ota yhteyttä</h1>
+        <p>Kysy neuvoja tai anna palautetta sivustosta.</p>
+
         <form>
             <label for="nimi">Nimi (pakollinen):</label>
             <input type="text" id="nimi" name="nimi" required>
+
             <label for="email">Sähköposti (pakollinen):</label>
             <input type="email" id="email" name="email" required>
+
             <label for="viesti">Viesti:</label>
             <textarea id="viesti" name="viesti" rows="5"></textarea>
-            <button type="submit">Lähetä</button>
+
+            <button type="submit">Lähetä viesti</button>
         </form>
     </main>
-    <footer><p>&copy; 2026 Gabriel Sarlund</p></footer>
+
+    <footer>
+        <p>&copy; 2026 Gabriel Sarlund | KovaStartti!</p>
+    </footer>
 </body>
 </html>
